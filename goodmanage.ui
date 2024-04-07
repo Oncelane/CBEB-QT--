@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GoodManage</class>
+ <widget class="QWidget" name="GoodManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1345</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="2">
+       <widget class="QPushButton" name="deleteGood">
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="editGood">
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="addGood">
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="8">
+       <widget class="QLineEdit" name="inpriceEdit"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>供应商</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="14">
+       <widget class="QLineEdit" name="inventoryEdit"/>
+      </item>
+      <item row="4" column="15">
+       <widget class="QPushButton" name="query">
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="14">
+       <widget class="QLineEdit" name="TypeEdit"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="IDEdit"/>
+      </item>
+      <item row="4" column="12">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>库存</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="12">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>类别</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QLineEdit" name="priceEdit"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>货品名称</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>参考价格</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QComboBox" name="inpriceCombox">
+        <item>
+         <property name="text">
+          <string>所有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大于等于</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>小于等于</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="nameEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>货品编码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>平均购入价格</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="6">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>平均出售价格</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="8">
+       <widget class="QLineEdit" name="outpriceEdit"/>
+      </item>
+      <item row="1" column="4" colspan="2">
+       <widget class="QComboBox" name="supplierCombox">
+        <item>
+         <property name="text">
+          <string>所有</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="7">
+       <widget class="QComboBox" name="outpirceCombox">
+        <item>
+         <property name="text">
+          <string>所有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大于等于</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>小于等于</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="13">
+       <widget class="QComboBox" name="typeCombox">
+        <item>
+         <property name="text">
+          <string>所有</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="13">
+       <widget class="QComboBox" name="inventoryCombox">
+        <item>
+         <property name="text">
+          <string>所有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大于等于</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>小于等于</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QComboBox" name="priceCombox">
+        <item>
+         <property name="text">
+          <string>所有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大于等于</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>小于等于</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTableView" name="tableView"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

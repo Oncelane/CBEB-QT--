@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrderAdd</class>
+ <widget class="QWidget" name="OrderAdd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1590</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="IDLable">
+     <property name="text">
+      <string>采购单号:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="IDEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="placeholderText">
+      <string>系统自动生成</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="StashLable">
+     <property name="text">
+      <string>入库仓库:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="selectstashCombox"/>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>数量</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLineEdit" name="amountEdit">
+     <property name="placeholderText">
+      <string>1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>可选择商品</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="addButton">
+     <property name="text">
+      <string>添加</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>单位价格</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLineEdit" name="valueEdit">
+     <property name="placeholderText">
+      <string>默认参考价格</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>已选择商品</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QPushButton" name="editButton">
+     <property name="text">
+      <string>修改</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QPushButton" name="deleteButton">
+     <property name="text">
+      <string>删除</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7">
+    <widget class="QPushButton" name="clearAllButton">
+     <property name="text">
+      <string>清空</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="4">
+    <widget class="QTableWidget" name="availableTableWidget">
+     <column>
+      <property name="text">
+       <string>货品编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>货品名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>单位</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>库存量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>参考价格</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>供应商公司</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="3" column="4" colspan="4">
+    <widget class="QTableWidget" name="selectGoodTableWidget">
+     <column>
+      <property name="text">
+       <string>货品编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>货品名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>单位</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>数量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>采购单位价格</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>统计金额</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="4" column="6">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>总价格：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="7">
+    <widget class="QLineEdit" name="totalPriceEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="placeholderText">
+      <string>自动统计</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="doneButton">
+        <property name="text">
+         <string>完成</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="cancelButton">
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="6" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,3">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>制单人：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="userNameEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string notr="true">不可修改</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>制单时间：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="timeEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>不可修改</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

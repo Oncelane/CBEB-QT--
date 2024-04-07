@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StashManage</class>
+ <widget class="QWidget" name="StashManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1062</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QComboBox" name="switchStash">
+       <item>
+        <property name="text">
+         <string>入库管理</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>出库管理</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addStash">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editStash">
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteStash">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="timeStart">
+       <property name="text">
+        <string>起始日期</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="timeStartLine"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="timeEnd">
+       <property name="text">
+        <string>终止日期</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="timeEndLine"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,10,0,10,0,10,10,0,10,10,10">
+     <item>
+      <widget class="QLabel" name="IDstashLable">
+       <property name="text">
+        <string>单据：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="IDstashEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="supplyerORcustom">
+       <property name="text">
+        <string>客户：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="supplyerORcustomLine"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="numberLable">
+       <property name="text">
+        <string>数量：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="numberSelect">
+       <item>
+        <property name="text">
+         <string>所有</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>&gt;=</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>&lt;=</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="numberLine"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="momeyLable">
+       <property name="text">
+        <string>金额：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="moneySelect">
+       <item>
+        <property name="text">
+         <string>所有</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>&gt;=</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>&lt;=</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="moneyLine"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="query">
+       <property name="text">
+        <string>查询</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="intableWidget">
+         <column>
+          <property name="text">
+           <string>入库单号</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>入库仓库</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>仓库地址</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>采购金额</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>入库数量</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>创建人</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>创建时间</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="outtableWidget">
+         <column>
+          <property name="text">
+           <string>出库单号</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>出库仓库</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>仓库地址</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>销售金额</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>出库数量</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>创建人</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>创建时间</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="lookGood">
+     <property name="text">
+      <string>查看详细信息</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

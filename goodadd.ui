@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GoodAdd</class>
+ <widget class="QWidget" name="GoodAdd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>货品添加界面</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>货品代码</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>货品名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>类别</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QComboBox" name="typeCombox">
+       <item>
+        <property name="text">
+         <string>1 动物产品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2 植物产品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3 动、植物油、脂、蜡</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4 食品、饮料、酒、醋；烟草</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5 矿产品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6 化学工业及其</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7 塑料、橡胶及其制品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8 生皮、皮革、毛皮；鞍具；旅行用品；手提包</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9 木及木制品；木炭；稻草，秸秆，编制材料制品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10 木浆及其他纤维状纤维素；纸及纸板</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>11 纺织原料及纺织制品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>12 鞋、帽、伞、鞭机器零件；羽毛；人造花；人发</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>13 石料、石膏、水泥、云母；陶瓷；玻璃</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>14 天然及养殖珍珠、宝石、贵金属及其制品；首饰；硬币</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>15 贱金属及其制品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>16 机器、机械器具、电气设备及其零件；录音机，电视，声音相关机器</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>17 车辆、航空器、船舶及有关运输设备；</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>18 光学、照相、电影、计算、校验、医疗或外科用仪器及精密仪器；钟表；乐器</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>19 武器、弹药及其零件</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>20 杂项制品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>21 艺术品、收藏品及古物</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="nameEdit"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>供应商</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>单位</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>货品简介</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QComboBox" name="unitCombox">
+       <item>
+        <property name="text">
+         <string>件</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>箱</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>包</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>桶</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>捆</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>台</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>盒</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>克</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>千克</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>吨</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>米(长度)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>平方米(面积)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>立方米(体积)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>参考价格</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>系统自动生成</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="valueEdit"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="QTextEdit" name="detailEdit"/>
+     </item>
+     <item row="7" column="2">
+      <widget class="QComboBox" name="supplierCombox"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QPushButton" name="editButton">
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QPushButton" name="doneButton">
+       <property name="text">
+        <string>完成</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

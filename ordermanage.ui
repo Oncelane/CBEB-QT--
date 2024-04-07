@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrderManage</class>
+ <widget class="QWidget" name="OrderManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1455</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QComboBox" name="switchOrder">
+       <item>
+        <property name="text">
+         <string>采购订单</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>销售订单</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addOrder">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editOrder">
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteOrder">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page1">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="timeStart_2">
+           <property name="text">
+            <string>起始日期</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="timeStartLine_2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="timeEnd_2">
+           <property name="text">
+            <string>终止日期</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="timeEndLine_2"/>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QTableView" name="intableView"/>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,10,0,0,0,10,10,10,10,10,10">
+         <item>
+          <widget class="QLabel" name="IDOrderLable_2">
+           <property name="text">
+            <string>单据：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="IDorderEdit_2"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="supplyerORcustom_2">
+           <property name="text">
+            <string>供应商：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="custombox"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="numberLable_2">
+           <property name="text">
+            <string>数量：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="numberCombox_2">
+           <item>
+            <property name="text">
+             <string>所有</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&gt;=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&lt;=</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="numberEdit_2"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="momeyLable_2">
+           <property name="text">
+            <string>金额：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="valueCombox_2">
+           <item>
+            <property name="text">
+             <string>所有</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&gt;=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&lt;=</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="valueEdit_2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="query_2">
+           <property name="text">
+            <string>查询</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="detailButton">
+         <property name="text">
+          <string>查看详细信息</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page2">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="timeStart">
+           <property name="text">
+            <string>起始日期</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="timeStartLine"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="timeEnd">
+           <property name="text">
+            <string>终止日期</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="timeEndLine"/>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,10,0,0,0,10,10,10,10,10,10">
+         <item>
+          <widget class="QLabel" name="IDOrderLable">
+           <property name="text">
+            <string>单据：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="IDorderEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="supplyerORcustom">
+           <property name="text">
+            <string>客户</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="supplierCombox"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="numberLable">
+           <property name="text">
+            <string>数量：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="numberCombox">
+           <item>
+            <property name="text">
+             <string>所有</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&gt;=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&lt;=</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="numberEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="momeyLable">
+           <property name="text">
+            <string>金额：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="valueCombox">
+           <item>
+            <property name="text">
+             <string>所有</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&gt;=</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>&lt;=</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="valueEdit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="query">
+           <property name="text">
+            <string>查询</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QTableView" name="outtableView"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
