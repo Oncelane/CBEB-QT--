@@ -145,7 +145,7 @@ void MainWindow::InitDatabase()
     db.setHostName("localhost"); // 本地连接
     db.setPort(3306);       // 如果使用的是默认端口可以不设置
     db.setUserName("root");	// 数据库用户名
-    db.setPassword("hhq2003"); // 数据库密码
+    db.setPassword("xxx"); // 数据库密码
     db.setDatabaseName("cbebusiness"); // 数据库名字
     if(db.open())
     {
